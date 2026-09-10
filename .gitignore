@@ -1,32 +1,6 @@
-# Build results
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
-
-# Visual Studio
+bin/
+obj/
 .vs/
 *.user
-*.suo
-*.userosscache
-*.sln.docstates
-
-# VS Code
-.vscode/
-!.vscode/settings.json
-
-# Rider
-.idea/
-
-# NuGet
-*.nupkg
-packages/
-!packages/build/
-
-# OS
 .DS_Store
-Thumbs.db
-
-# Markdown
-*.bak
-*.tmp
+publish/

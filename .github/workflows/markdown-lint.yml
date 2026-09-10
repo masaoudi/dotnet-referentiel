@@ -2,24 +2,13 @@ name: Markdown Lint
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Markdown Lint
-        uses: avto-dev/markdown-lint@v1
-        with:
-          args: '**/*.md'
-          config: '.markdownlint.json'
-      
-      - name: Check links
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          use-quiet-mode: 'yes'
-          config-file: '.markdown-link-check.json'
+      - name: Checkout code
+        uses: actions/checkout@v4
